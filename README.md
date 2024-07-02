@@ -1,4 +1,4 @@
-# ÖnerSene Google Auth Node.js Projesi
+# Önersene Google Auth Node.js Projesi
 
 ## Proje Amacı
 Bu proje, Node.js ve Express.js kullanarak Google Authentication (Google Auth) ile kimlik doğrulama ve yönlendirme işlemlerini gerçekleştiren bir uygulamadır. Proje ayrıca Google veri setlerini kullanmayı, yönetici ve admin rollerini ayırmayı ve kullanıcı arayüzü geliştirmeyi amaçlar.
