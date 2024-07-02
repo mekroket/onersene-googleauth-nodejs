@@ -3,6 +3,12 @@
 ## Proje Amacı
 Bu proje, Node.js ve Express.js kullanarak Google Authentication (Google Auth) ile kimlik doğrulama ve yönlendirme işlemlerini gerçekleştiren bir uygulamadır. Proje ayrıca Google veri setlerini kullanmayı, yönetici ve admin rollerini ayırmayı ve kullanıcı arayüzü geliştirmeyi amaçlar.
 
+## Proje Resimleri
+![1](https://github.com/mekroket/onersene-googleauth-nodejs/blob/main/1.png)
+![2](https://github.com/mekroket/onersene-googleauth-nodejs/blob/main/2.png)
+![3](https://github.com/mekroket/onersene-googleauth-nodejs/blob/main/3.png)
+![4](https://github.com/mekroket/onersene-googleauth-nodejs/blob/main/4.png)
+
 ## Kullanılan Teknolojiler
 - **Node.js**: Sunucu taraflı JavaScript çalıştırma ortamı.
 - **Express.js**: Node.js için minimal ve esnek web uygulama çatısı.
@@ -10,7 +16,7 @@ Bu proje, Node.js ve Express.js kullanarak Google Authentication (Google Auth) i
 - **Google Auth**: Google'ın OAuth 2.0 protokolünü kullanarak kullanıcı kimlik doğrulama.
 - Node.js
 - MongoDB
-- 
+  
 ## Özellikler
 Google ile kimlik doğrulama
 Kullanıcı ve yönetici rolleri
