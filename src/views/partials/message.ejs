@@ -1,0 +1,31 @@
+<% if(error_msg != ''){ %>
+    <div class="ui warning message">
+        <i class="close icon"></i>
+        <div class="header"></div>
+        <%= error_msg %>
+    </div>
+<% } %>
+
+<% if(error != ''){ %>
+    <div class="ui warning message">
+        <i class="close icon"></i>
+        <div class="header"></div>
+        <%= error %>
+    </div>
+<% } %>
+
+<% if(success != ''){ %>
+    <div class="alert alert-primary" role="alert">
+        <i class="alert alert-primary" role="alert"></i>
+        <div class="header"></div>
+        <%= success  %>
+    </div>
+<% } %>
+
+<% if(typeof success_msg_flash != 'undefined'){ %>
+    <div class="ui success message">
+        <i class="close icon"></i>
+        <div class="header"></div>
+        <%= success_msg_flash %>
+    </div>
+<% } %>

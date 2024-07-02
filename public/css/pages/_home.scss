@@ -1,0 +1,139 @@
+main {
+    .first-sect {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        h2 {
+            font-size: 34px;
+            font-weight: map-get($font-weight, "b");
+            color: map-get($color, "black");
+        }
+        .cheap-product-swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    width: 200px;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    border: 1px solid map-get($color, "black");
+                    overflow: hidden;
+                    a {
+                        width: 100%;
+                        .new-timer {
+                            position: absolute;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 10px 0;
+                            .timer {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 5px;
+                                svg {
+                                    fill: map-get($color, "main");
+                                }
+                            }
+                            .cheapest {
+                                background-color: map-get($color, "main");
+                                padding: 2px 5px 2px 8px;
+                                border-radius: 8px 0 0 8px;
+                                font-size: 10px;
+                                color: map-get($color, "black");
+                                font-weight: map-get($font-weight, "m");
+                            }
+                        }
+                        .swiper-content {
+                            .img {
+                                width: 100%;
+                                height: 120px;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    background-color: gray;
+                                }
+                            }
+                            .text {
+                                padding: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 10px;
+                                .logo {
+                                    display: flex;
+                                    width: 50px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom: -5px;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                                h2 {
+                                    font-size: 14px;
+                                    font-weight: map-get($font-weight, "b");
+                                    color: map-get($color, "black");
+                                    text-align: left;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    span {
+                                        color: map-get($color, "main");
+                                    }
+                                }
+                                .options {
+                                    width: 100%;
+                                    .cheap {
+                                        display: flex;
+                                        flex-direction: row;
+                                        h6 {
+                                            font-size: 10px;
+                                            font-weight: map-get($font-weight, "b");
+                                            color: map-get($color, "red");
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            display: inline-block;
+                                            white-space: nowrap;
+                                            overflow: hidden !important;
+                                            text-overflow: ellipsis;
+                                            span {
+                                                margin: 0 5px;
+                                                svg {
+                                                    fill: map-get($color, "black");
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                color: map-get($color, "blue");
+                                                span {
+                                                    svg {
+                                                        fill: map-get($color, "main");
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .price {
+                                    font-size: 20px;
+                                    font-weight: map-get($font-weight, "b");
+                                    color: map-get($color, "black");
+                                    span {
+                                        font-size: 16px;
+                                        color: map-get($color, "black");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+main {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: map-get($color, "white");
+        border-bottom: 1px solid map-get($color, "main");
+        box-shadow: 0px 4px 4px 0px rgba(31, 155, 20, 0.25);
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px;
+            .logo {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 210px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .content {
+                display: flex;
+                .categories {
+                    position: relative;
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        color: map-get($color, "black");
+                        font-size: 16px;
+                        font-weight: map-get($font-weight, "m");
+                        background-color: map-get($color, "main");
+                        padding: 10px 20px;
+                        border-radius: 100px;
+                        cursor: pointer;
+                        svg {
+                            fill: map-get($color, "black");
+                            rotate: 0deg;
+                            transition: 400ms;
+                        }
+                        &.clicked {
+                            svg {
+                                rotate: 180deg;
+                            }
+                        }
+                    }
+                    .category {
+                        display: none;
+                        position: absolute;
+                        width: 42vw;
+                        top: 54px;
+                        left: 0;
+                        background-color: map-get($color, "white");
+                        padding: 30px 50px;
+                        border-radius: 0px 0px 12px 12px;
+                        border: 1px solid map-get($color, "main");
+                        box-shadow: 0px 4px 10px 0px rgba(31, 155, 20, 0.25);
+                        .items {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 30px;
+                            .item {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 5px;
+                                .img {
+                                    width: 70px;
+                                    height: 70px;
+                                    padding: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 4px;
+                                    border: 1px solid map-get($color, "black");
+                                    background: #ffffff;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                h4 {
+                                    font-size: 14px;
+                                    font-weight: map-get($font-weight, "m");
+                                    color: map-get($color, "black");
+                                }
+                            }
+                        }
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+                .search {
+                    position: relative;
+                    width: 500px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 60px 0 40px;
+                    font-weight: map-get($font-weight, "r");
+                    input {
+                        position: absolute;
+                        width: 100%;
+                        font-size: 16px;
+                        color: map-get($color, "black");
+                        padding: 14px 64px 14px 25px;
+                        border: 1px solid map-get($color, "main");
+                        border-radius: 100px;
+                        background-color: #ffffff;
+                    }
+                    button {
+                        position: absolute;
+                        right: 0;
+                        width: 50px;
+                        height: 50px;
+                        background-color: map-get($color, "main");
+                        border: 1px solid map-get($color, "main");
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            font-size: 20px;
+                            fill: map-get($color, "white");
+                        }
+                    }
+                }
+                .signin-up {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    font-size: 16px;
+                    font-weight: map-get($font-weight, "m");
+                    a {
+                        padding: 10px 30px;
+                        border: 1px solid map-get($color, "main");
+                        border-radius: 100px;
+                        &:nth-child(1) {
+                            color: map-get($color, "main");
+                        }
+                        &:nth-child(2) {
+                            background-color: map-get($color, "main");
+                            color: map-get($color, "black");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
